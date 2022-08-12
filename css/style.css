@@ -217,20 +217,20 @@ body {
 .index-lorem__margin:nth-child(1) {
   margin-left: 0;
 }
-.profession-title {
+.index-sections__title {
   text-align: center;
   padding-bottom: 50px;
 }
-.profession {
+.index-profession {
   display: flex;
   justify-content: space-between;
 }
-.profession-box {
+.index-profession__block {
   position: relative;
   width: 370px;
   height: 294px;
 }
-.profession-name {
+.index-profession__name {
   position: absolute;
   width: 370px;
   height: 70px;
@@ -246,10 +246,6 @@ body {
   text-align: center;
   background: var(--profession-name-background);
 }
-.profession-img {
-  position: absolute;
-  z-index: 0;
-}
 .team {
   background-color: var(--team-background-color);
   padding-bottom: 94px;
@@ -258,11 +254,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.team-title {
+.index-sections__title--team {
   display: flex;
   justify-content: center;
   padding-top: 94px;
-  padding-bottom: 50px;
 }
 .team-name {
   padding-top: 30px;
@@ -325,10 +320,6 @@ body {
 }
 .team-icon .icon:last-child {
   margin-right: 0;
-}
-.clients-title {
-  text-align: center;
-  padding-bottom: 50px;
 }
 .clients-icon-block {
   display: flex;
