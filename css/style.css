@@ -486,13 +486,13 @@ body {
 .logo--footer {
   color: var(--white-color);
 }
-.footer-items {
+.footer {
   color: var(--white-color);
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-items-blocks {
+.footer__items {
   display: flex;
 }
 .footer-address {
@@ -517,36 +517,36 @@ body {
   color: var(--blue-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-block-icons {
-  margin-left: 70px;
+.footer-sections {
   padding-top: 12px;
 }
-.footer-section-title {
+.footer-sections--first {
+  margin-left: 70px;
+}
+.footer-sections__title {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--white-color);
   padding-bottom: 20px;
 }
-.footer-icon {
+.footer-icons {
   display: flex;
   justify-content: space-between;
   width: 206px;
 }
-.icon-media-footer {
+.footer-icons__link {
   fill: var(--white-color);
   width: 20px;
   height: 20px;
+  text-decoration: none;
 }
-.footer-icon-background:hover,
-.footer-icon-background:focus {
+.footer-icons__background:hover,
+.footer-icons__background:focus {
   background-color: var(--blue-color);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icon-link {
-  text-decoration: none;
-}
-.footer-icon-background {
+.footer-icons__background {
   width: 44px;
   height: 44px;
   display: flex;
@@ -555,15 +555,13 @@ body {
   border-radius: 50%;
   background-color: var(--footer-background-icon);
 }
-.footer-form {
+.footer-sections--second {
   margin-left: 78px;
-  padding-top: 12px;
 }
-.footer-input {
+.footer-sections__input {
   background-color: var(--footer-background-color);
   box-sizing: border-box;
   position: absolute;
-
   border: 1px solid var(--footer-form-border);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -589,7 +587,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.icon-form {
+.footer-btn__icon {
   text-align: center;
   fill: var(--white-color);
   width: 24px;
