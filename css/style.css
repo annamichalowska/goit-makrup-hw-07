@@ -181,25 +181,21 @@ body {
   display: block;
   text-align: center;
 }
-.description-index {
+.index-lorem {
   display: flex;
   letter-spacing: 0.03em;
   font-size: 14px;
   letter-spacing: 0.03em;
   list-style-type: none;
 }
-.index-lorem-background {
+.index-lorem__background {
   padding: 25px 0;
   background-color: var(--team-background-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.index-lorem-background .icon {
-  width: 70px;
-  height: 70px;
-}
-.index-lorem-title {
+.index-lorem__title {
   display: block;
   font-weight: 700;
   line-height: 1.14;
@@ -208,17 +204,17 @@ body {
   padding-bottom: 10px;
   padding-top: 30px;
 }
-.index-lorem-title:first-child {
+.index-lorem__title:first-child {
   margin-left: 0;
 }
-.index-lorem-description {
+.index-lorem__descript {
   color: var(--mail-phone-color);
   line-height: 1.71;
 }
-.index-lorem-margin {
+.index-lorem__margin {
   margin-left: 30px;
 }
-.index-lorem-margin:nth-child(1) {
+.index-lorem__margin:nth-child(1) {
   margin-left: 0;
 }
 .profession-title {
