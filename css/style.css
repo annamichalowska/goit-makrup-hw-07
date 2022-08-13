@@ -1,6 +1,7 @@
 :root {
   --black-color: #000;
   --white-color: #fff;
+  --light-gray: rgba(0, 0, 0, 0.1);
   --header-line-color: #ececec;
   --strong-text-color: #212121;
   --blue-color: #2196f3;
@@ -13,7 +14,6 @@
   --team-block-shadow-first: rgba(0, 0, 0, 0.14);
   --team-block-shadow-second: rgba(0, 0, 0, 0.2);
   --blocks-shadow-color: rgba(0, 0, 0, 0.12);
-  --light-gray: rgba(0, 0, 0, 0.1);
   --portfolio-shadow: rgba(0, 0, 0, 0.08);
   --active-icon: #afb1b8;
   --footer-background-icon: rgba(255, 255, 255, 0.1);
@@ -378,8 +378,8 @@ body {
 .portfolio-nav__btn:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
-  box-shadow: 0px 3px 1px var(--light-gray),
-    0px 1px 2px var(--portfolio-shadow), 0px 2px 2px var(--blocks-shadow-color);
+  box-shadow: 0px 3px 1px var(--light-gray), 0px 1px 2px var(--portfolio-shadow),
+    0px 2px 2px var(--blocks-shadow-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -406,8 +406,8 @@ body {
   display: block;
 }
 .portfolio-items__blocks:hover {
-  box-shadow: 0px 3px 1px var(--light-gray),
-    0px 1px 2px var(--portfolio-shadow), 0px 2px 2px var(--blocks-shadow-color);
+  box-shadow: 0px 3px 1px var(--light-gray), 0px 1px 2px var(--portfolio-shadow),
+    0px 2px 2px var(--blocks-shadow-color);
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
