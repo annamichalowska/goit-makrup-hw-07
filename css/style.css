@@ -8,19 +8,19 @@
   --team-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --portfolio-border-block-color: #eeeeee;
-  --alpha-grey-color: rgba(255, 255, 255, 0.6);
-  --alpha-dark-grey-color: rgba(0, 0, 0, 0.15);
-  --alpha-almost-black-color: rgba(0, 0, 0, 0.2);
-  --alpha-almost-grey-color: rgba(0, 0, 0, 0.12);
-  --alpha-very-dark-grey-color: rgba(0, 0, 0, 0.14);
-  --alpha-less-black-color: rgba(0, 0, 0, 0.1);
-  --alpha-less-grey-color: rgba(0, 0, 0, 0.08);
+  --footer-address-color: rgba(255, 255, 255, 0.6);
+  --front-btn-shadow: rgba(0, 0, 0, 0.15);
+  --team-block-shadow-first: rgba(0, 0, 0, 0.14);
+  --team-block-shadow-second: rgba(0, 0, 0, 0.2);
+  --blocks-shadow-color: rgba(0, 0, 0, 0.12);
+  --light-gray: rgba(0, 0, 0, 0.1);
+  --portfolio-shadow: rgba(0, 0, 0, 0.08);
   --active-icon: #afb1b8;
   --footer-background-icon: rgba(255, 255, 255, 0.1);
   --profession-name-background: rgba(47, 48, 58, 0.8);
   --footer-form-border: rgba(255, 255, 255, 0.3);
   --modal-input-color: rgba(33, 33, 33, 0.2);
-  --dark-blue-color: #0769b9e5;
+  --modal-btn-active: #0769b9e5;
 }
 * {
   margin: 0;
@@ -159,7 +159,7 @@ body {
 .index-front__btn {
   color: var(--white-color);
   background-color: var(--blue-color);
-  box-shadow: 0px 4px 4px var(--alpha-dark-grey-color);
+  box-shadow: 0px 4px 4px var(--front-btn-shadow);
   border-radius: 4px;
   padding: 15px 42px;
   font-weight: 700;
@@ -262,9 +262,9 @@ body {
 }
 .index-team__block {
   background: var(--white-color);
-  box-shadow: 0px 1px 3px var(--alpha-almost-grey-color),
-    0px 1px 1px var(--alpha-very-dark-grey-color),
-    0px 2px 1px var(--alpha-almost-black-color);
+  box-shadow: 0px 1px 3px var(--blocks-shadow-color),
+    0px 1px 1px var(--team-block-shadow-first),
+    0px 2px 1px var(--team-block-shadow-second);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
@@ -378,9 +378,8 @@ body {
 .portfolio-nav__btn:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
-  box-shadow: 0px 3px 1px var(--alpha-less-black-color),
-    0px 1px 2px var(--alpha-less-grey-color),
-    0px 2px 2px var(--alpha-almost-grey-color);
+  box-shadow: 0px 3px 1px var(--light-gray),
+    0px 1px 2px var(--portfolio-shadow), 0px 2px 2px var(--blocks-shadow-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -407,9 +406,8 @@ body {
   display: block;
 }
 .portfolio-items__blocks:hover {
-  box-shadow: 0px 3px 1px var(--alpha-less-black-color),
-    0px 1px 2px var(--alpha-less-grey-color),
-    0px 2px 2px var(--alpha-almost-grey-color);
+  box-shadow: 0px 3px 1px var(--light-gray),
+    0px 1px 2px var(--portfolio-shadow), 0px 2px 2px var(--blocks-shadow-color);
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -480,11 +478,11 @@ body {
   font-style: normal;
 }
 .footer-address__email {
-  color: var(--alpha-grey-color);
+  color: var(--footer-address-color);
   text-decoration: none;
 }
 .footer-address__phone {
-  color: var(--alpha-grey-color);
+  color: var(--footer-address-color);
   text-decoration: none;
 }
 .footer-address__email:focus,
@@ -614,7 +612,7 @@ body {
   width: 30px;
   height: 30px;
   background-color: var(--white-color);
-  border: 1px solid var(--alpha-less-black-color);
+  border: 1px solid var(--light-gray);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -782,6 +780,6 @@ body {
 }
 .modal__form button:focus,
 .modal__form button:hover {
-  background: var(--dark-blue-color);
+  background: var(--modal-btn-active);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
