@@ -74,33 +74,28 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.logo__part {
+  color: var(--blue-color);
+}
 
 .logo--header {
   color: var(--black-color);
-}
-
-.logo__part {
-  color: var(--blue-color);
 }
 
 .navigation-header {
   display: flex;
   margin-right: 364px;
 }
-
 .navigation-header__description {
   margin-left: 46px;
   color: var(--strong-text-color);
   text-decoration: none;
   position: relative;
 }
-
 .navigation-header__description:first-child {
   margin-left: 0;
 }
-
-.navigation-header__description:focus,
-.navigation-header__description:hover {
+.navigation-header__description:focus, .navigation-header__description:hover {
   color: var(--blue-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -108,7 +103,6 @@ body {
 .navigation-header__description.navigation-header--underline {
   color: var(--blue-color);
 }
-
 .navigation-header__description.navigation-header--underline::after {
   position: absolute;
   display: block;
@@ -124,7 +118,6 @@ body {
   display: flex;
   text-decoration: none;
 }
-
 .header-address__description {
   display: flex;
   margin-left: 30px;
@@ -132,13 +125,10 @@ body {
   text-decoration: none;
   align-items: center;
 }
-
 .header-address__description:first-child {
   margin-left: 0;
 }
-
-.header-address__description:hover,
-.header-address__description:focus {
+.header-address__description:hover, .header-address__description:focus {
   color: var(--blue-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -410,7 +400,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer__items {
   display: flex;
 }
@@ -422,21 +411,15 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
 }
-
 .footer-address__email {
   color: var(--footer-address-color);
   text-decoration: none;
 }
-
 .footer-address__phone {
   color: var(--footer-address-color);
   text-decoration: none;
 }
-
-.footer-address__email:focus,
-.footer-address__email:hover,
-.footer-address__phone:focus,
-.footer-address__phone:hover {
+.footer-address__email:hover, .footer-address__email:focus, .footer-address__phone:hover, .footer-address__phone:focus {
   color: var(--blue-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -444,52 +427,12 @@ body {
 .footer-sections {
   padding-top: 12px;
 }
-
-.footer-sections--first {
-  margin-left: 70px;
-}
-
 .footer-sections__title {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--white-color);
   padding-bottom: 20px;
 }
-
-.footer-icons {
-  display: flex;
-  justify-content: space-between;
-  width: 206px;
-}
-
-.footer-icons__link {
-  fill: var(--white-color);
-  width: 20px;
-  height: 20px;
-  text-decoration: none;
-}
-
-.footer-icons__background:hover,
-.footer-icons__background:focus {
-  background-color: var(--blue-color);
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-icons__background {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: var(--footer-background-icon);
-}
-
-.footer-sections--second {
-  margin-left: 78px;
-}
-
 .footer-sections__input {
   background-color: var(--footer-background-color);
   box-sizing: border-box;
@@ -503,6 +446,40 @@ body {
   padding-bottom: 15px;
   letter-spacing: 0.03em;
   color: white;
+}
+
+.footer-sections--first {
+  margin-left: 70px;
+}
+
+.footer-sections--second {
+  margin-left: 78px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+}
+.footer-icons__link {
+  fill: var(--white-color);
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+}
+.footer-icons__background {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--footer-background-icon);
+}
+.footer-icons__background:hover, .footer-icons__background:focus {
+  background-color: var(--blue-color);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-btn {
@@ -520,7 +497,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .footer-btn__icon {
   text-align: center;
   fill: var(--white-color);
