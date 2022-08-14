@@ -6,32 +6,33 @@
   padding-top: 100px;
   padding-bottom: 56px;
   text-align: center;
-}
-.portfolio-nav__btn {
-  font-weight: bold;
-  background: var(--team-background-color);
-  border-style: none;
-  padding: 6px 20px;
-  line-height: 1.625;
-  border-radius: 4px;
-  margin-left: 8px;
-  cursor: pointer;
-}
-.portfolio-nav__btn:nth-child(1) {
-  margin-left: 0px;
-}
-.portfolio-nav__btn a {
-  text-decoration: none;
-  color: var(--strong-text-color);
-}
-.portfolio-nav__btn:focus,
-.portfolio-nav__btn:hover {
-  background-color: var(--blue-color);
-  color: var(--white-color);
-  box-shadow: 0px 3px 1px var(--light-gray), 0px 1px 2px var(--portfolio-shadow),
-    0px 2px 2px var(--blocks-shadow-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__btn {
+    font-weight: bold;
+    background: var(--team-background-color);
+    border-style: none;
+    padding: 6px 20px;
+    line-height: 1.625;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+    &:nth-child(1) {
+      margin-left: 0px;
+    }
+    & a {
+      text-decoration: none;
+      color: var(--strong-text-color);
+    }
+    &:focus,
+    &:hover {
+      background-color: var(--blue-color);
+      color: var(--white-color);
+      box-shadow: 0px 3px 1px var(--light-gray),
+        0px 1px 2px var(--portfolio-shadow),
+        0px 2px 2px var(--blocks-shadow-color);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
 .portfolio-items {
   display: flex;
@@ -40,26 +41,27 @@
   align-items: center;
   gap: 30px;
   padding-bottom: 94px;
-}
-.portfolio-items:nth-child(3n) {
-  gap: 0;
-}
-.portfolio-items__blocks {
-  display: block;
-  margin-top: 0;
-}
-.portfolio-items__img {
-  position: relative;
-  overflow: hidden;
-}
-.portfolio-items__img img {
-  display: block;
-}
-.portfolio-items__blocks:hover {
-  box-shadow: 0px 3px 1px var(--light-gray), 0px 1px 2px var(--portfolio-shadow),
-    0px 2px 2px var(--blocks-shadow-color);
-  cursor: pointer;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:nth-child(3n) {
+    gap: 0;
+  }
+  &__blocks {
+    display: block;
+    margin-top: 0;
+    &:hover {
+      box-shadow: 0px 3px 1px var(--light-gray),
+        0px 1px 2px var(--portfolio-shadow),
+        0px 2px 2px var(--blocks-shadow-color);
+      cursor: pointer;
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__img {
+    position: relative;
+    overflow: hidden;
+    & img {
+      display: block;
+    }
+  }
 }
 .portfolio-items__blocks:hover .portfolio-animation {
   transform: translateY(0);
@@ -76,15 +78,15 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-animation__descript {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.56;
-  color: var(--white-color);
+  &__descript {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--white-color);
+  }
 }
 .portfolio-figcaption {
   list-style-type: none;
@@ -93,18 +95,18 @@
   border-bottom: 1px solid var(--portfolio-border-block-color);
   border-right: 1px solid var(--portfolio-border-block-color);
   margin-top: -4px;
-}
-.portfolio-figcaption__name {
-  font-weight: bold;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.06em;
-  color: var(--strong-text-color);
-  line-height: 2;
-}
-.portfolio-figcaption__descript {
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  color: var(--mail-phone-color);
-  line-height: 1.875;
+  &__name {
+    font-weight: bold;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    color: var(--strong-text-color);
+    line-height: 2;
+  }
+  &__descript {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: var(--mail-phone-color);
+    line-height: 1.875;
+  }
 }
