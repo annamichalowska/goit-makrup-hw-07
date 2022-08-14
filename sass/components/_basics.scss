@@ -19,4 +19,13 @@ body {
 }
 .section {
   padding-top: 94px;
+  &__title {
+    text-align: center;
+    padding-bottom: 50px;
+    &--team {
+      display: flex;
+      justify-content: center;
+      padding-top: 94px;
+    }
+  }
 }
