@@ -110,11 +110,10 @@ body {
   color: var(--blue-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.navigation-header__description.navigation-header--underline {
+.navigation-header__description.navigation-heder--underline {
   color: var(--blue-color);
 }
-.navigation-header__description.navigation-header--underline::after {
+.navigation-header__description.navigation-heder--underline::after {
   position: absolute;
   display: block;
   content: "";
@@ -143,17 +142,14 @@ body {
   color: var(--blue-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .header-address .header-address__icon {
   fill: currentColor;
   margin-right: 10px;
 }
-
 .header-address .header-address__icon--envelope {
   width: 16px;
   height: 12px;
 }
-
 .header-address .header-address__icon--mobile {
   width: 10px;
   height: 36px;
@@ -198,7 +194,6 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .index-front .container {
   margin: auto;
   display: block;
@@ -322,17 +317,15 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.team-icon__background:hover .team-icon__link, .team-icon__background:focus .team-icon__link {
+  fill: var(--white-color);
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .team-icon__link {
   fill: var(--active-icon);
   width: 20px;
   height: 20px;
-}
-
-.team-icon__background:hover .team-icon__link,
-.team-icon__background:focus .team-icon__link {
-  fill: var(--white-color);
-  cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .index-clients {
@@ -357,9 +350,7 @@ body {
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.index-clients__icon-background:hover .index-clients__icon,
-.index-clients__icon-background:focus .index-clients__icon {
+.index-clients__icon-background:hover .index-clients__icon, .index-clients__icon-background:focus .index-clients__icon {
   fill: var(--blue-color);
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -528,17 +519,16 @@ body {
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio-items__blocks:hover .portfolio-animation {
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .portfolio-items__img {
   position: relative;
   overflow: hidden;
 }
 .portfolio-items__img img {
   display: block;
-}
-
-.portfolio-items__blocks:hover .portfolio-animation {
-  transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-animation {
@@ -603,6 +593,14 @@ body {
   transition: opacity 250ms, visibility 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal.is-hidden .modal__block {
+  transform: scale(2);
+}
 .modal__block {
   position: relative;
   top: 50%;
@@ -625,12 +623,15 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-.modal__close-btn:hover {
+.modal__close-btn:hover, .modal__close-btn:focus {
   cursor: pointer;
   background-color: var(--blue-color);
   color: var(--white-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__close-btn:hover .modal__close-icon, .modal__close-btn:focus .modal__close-icon {
+  fill: var(--white-color);
 }
 .modal__close-icon {
   fill: var(--black-color);
@@ -650,20 +651,24 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.modal.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.modal__form button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 10px 76px;
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  cursor: pointer;
 }
-
-.modal.is-hidden .modal__block {
-  transform: scale(2);
-}
-
-.modal__close-btn:hover .modal__close-icon,
-.modal__close-btn:focus .modal__close-icon {
-  fill: var(--white-color);
+.modal__form button:focus, .modal__form button:hover {
+  background: var(--modal-btn-active);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-blocks {
@@ -696,6 +701,10 @@ body {
   border-color: var(--blue-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-blocks__input:hover ~ .modal-blocks__icons, .modal-blocks__input:focus ~ .modal-blocks__icons {
+  fill: var(--blue-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-blocks__icons {
   position: absolute;
   top: 50%;
@@ -720,12 +729,6 @@ body {
   outline: none;
   border-color: var(--blue-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-blocks__input:focus ~ .modal-blocks__icons,
-.modal-blocks__input:hover ~ .modal-blocks__icons {
-  fill: var(--blue-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-accept {
@@ -757,6 +760,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.modal-accept__checkbox:checked + .modal-accept__icon {
+  background-color: var(--blue-color);
+  border: none;
+}
 .modal-accept__icon {
   border-radius: 3px;
   width: 17px;
@@ -778,29 +785,4 @@ body {
 .modal-accept__text a {
   color: var(--blue-color);
   margin-left: 0;
-}
-
-.modal-accept__checkbox:checked + .modal-accept__icon {
-  background-color: var(--blue-color);
-  border: none;
-}
-
-.modal__form button {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding: 10px 76px;
-  background: var(--blue-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-  cursor: pointer;
-}
-.modal__form button:focus, .modal__form button:hover {
-  background: var(--modal-btn-active);
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */
