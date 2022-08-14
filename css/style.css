@@ -217,7 +217,7 @@ body {
 .index-lorem__margin:nth-child(1) {
   margin-left: 0;
 }
-.index-sections__title {
+.section__title {
   text-align: center;
   padding-bottom: 50px;
 }
@@ -254,7 +254,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.index-sections__title--team {
+.section__title--team {
   display: flex;
   justify-content: center;
   padding-top: 94px;
@@ -597,7 +597,6 @@ body {
   top: 50%;
   left: 50%;
   width: 528px;
-  /* height: 581px; */
   padding: 40px;
   transform: translate(-50%, -50%);
   background-color: var(--white-color);
@@ -628,7 +627,7 @@ body {
   height: 11px;
 }
 .modal__close-btn:hover .modal__close-icon,
-.modal__close-btn:focus .icon__close-icon {
+.modal__close-btn:focus .modal__close-icon {
   fill: var(--white-color);
 }
 .modal__description {
