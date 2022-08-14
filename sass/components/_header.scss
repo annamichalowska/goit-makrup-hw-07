@@ -13,20 +13,6 @@
   align-items: center;
   justify-content: space-between;
 }
-.logo {
-  font-size: 26px;
-  font-family: $mainFont;
-  text-decoration: none;
-  font-weight: 700;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  &__part {
-    color: var(--blue-color);
-  }
-}
-.logo--header {
-  color: var(--black-color);
-}
 .navigation-header {
   display: flex;
   margin-right: 364px;
